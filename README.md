@@ -53,7 +53,7 @@ Professional Javascript developer
 * Gulp
 
 ### Version control
-* GIT
+* Git
 
 ### Testing
 * Jasmine
@@ -64,13 +64,13 @@ Professional Javascript developer
 * Agile software development
 * Task planning
 
-## EDUCATION
+## Education
 
 * Moscow State University, 2011 - 2015
 * Bachelor in biology
 * Insterested in mathematical modelling of biological systems
 * Online lectures of Harvard and MIT
-## LANGUAGES
+## Languages
 
 * My native language is russian
 * Fluent in english(C1) and french(B2)
