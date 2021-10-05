@@ -1,18 +1,20 @@
 ## Pavel Norin | JavaScript Web Developer
 
 Professional Javascript developer
-## CONTACTS
 
-* **Phone**: +7(985)731-91-22
-* **Email**: pavelnaureen@hotmail.com
+## Contacts
+
+* Phone: +7(985)731-91-22
+* Email: pavelnaureen@hotmail.com
 * LinkedIn: @pablo3443
 * Github: @pablo3443
 
-## INTERESTS
+## Interests
 * Data visualization
 * UI/UX design
 * Bioinformatics
-## WORK HISTORY
+
+## Work history
 ### Comindware (09/2019 - now), Javascript developer
 * Layout components
 * SVG diagrams
@@ -26,8 +28,9 @@ Professional Javascript developer
 ### Freelance (06/2016 - 09/2019), Frontend developer
 * Creating websites
 
-## KEY SKILLS
-### FRAMEWORKS
+## Key skills
+
+### Frameworks
 
 * Backbone (with Marionette)
 * Vue
@@ -35,31 +38,32 @@ Professional Javascript developer
 * JQuery
 * Vanilla JS
 
-### TECHNOLOGIES
+### Technologies
 * SVG
 * Canvas
 * Promises
 * TypeScript
 
-### SERVER-SIDE
+### Server-side
 * .NET Framework
 * NodeJS
 
-### BUNDLING
+### Bundling
 * Webpack
 * Gulp
 
-### VERSION CONTROL
+### Version control
 * GIT
 
-### TESTING
+### Testing
 * Jasmine
 * Karma
 * Jest
 
-### PROCESS
+### Process
 * Agile software development
 * Task planning
+
 ## EDUCATION
 
 * Moscow State University, 2011 - 2015
