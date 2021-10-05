@@ -70,6 +70,7 @@ Professional Javascript developer
 * Bachelor in biology
 * Insterested in mathematical modelling of biological systems
 * Online lectures of Harvard and MIT
+
 ## Languages
 
 * My native language is russian
