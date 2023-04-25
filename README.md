@@ -4,7 +4,6 @@ Professional Javascript developer
 
 ## Contacts
 
-* Phone: +7(985)731-91-22
 * Email: pavelnaureen@hotmail.com
 * LinkedIn: @pablo3443
 * Github: @pablo3443
