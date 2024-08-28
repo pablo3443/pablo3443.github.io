@@ -14,7 +14,8 @@ Professional Javascript developer
 * Bioinformatics
 
 ## Work history
-### Comindware (09/2019 - now), Javascript developer
+### Visme (09/2021 - now), Javascript developer
+### Comindware (09/2019 - 09/2021), Javascript developer
 * Layout components
 * SVG diagrams
 * Charts and graphs
