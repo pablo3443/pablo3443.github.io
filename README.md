@@ -1,77 +1,54 @@
-## Pavel Norin | JavaScript Web Developer
+# React + TypeScript + Vite
 
-Professional Javascript developer
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Contacts
+Currently, two official plugins are available:
 
-* Email: pavelnaureen@hotmail.com
-* LinkedIn: @pablo3443
-* Github: @pablo3443
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Interests
-* Data visualization
-* UI/UX design
-* Bioinformatics
+## Expanding the ESLint configuration
 
-## Work history
-### Visme (09/2021 - now), Javascript developer
-### Comindware (09/2019 - 09/2021), Javascript developer
-* Layout components
-* SVG diagrams
-* Charts and graphs
-* User forms
-* Error handling
-* UI
-* Code review
-* Bugfix
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-### Freelance (06/2016 - 09/2019), Frontend developer
-* Creating websites
+```js
+export default tseslint.config({
+  extends: [
+    // Remove ...tseslint.configs.recommended and replace with this
+    ...tseslint.configs.recommendedTypeChecked,
+    // Alternatively, use this for stricter rules
+    ...tseslint.configs.strictTypeChecked,
+    // Optionally, add this for stylistic rules
+    ...tseslint.configs.stylisticTypeChecked,
+  ],
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
+```
 
-## Key skills
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-### Frameworks
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-* Backbone (with Marionette)
-* Vue
-* React
-* JQuery
-* Vanilla JS
-
-### Technologies
-* SVG
-* Canvas
-* Promises
-* TypeScript
-
-### Server-side
-* .NET Framework
-* NodeJS
-
-### Bundling
-* Webpack
-* Gulp
-
-### Version control
-* Git
-
-### Testing
-* Jasmine
-* Karma
-* Jest
-
-### Process
-* Agile software development
-* Task planning
-
-## Education
-
-* Moscow State University, 2011 - 2015
-* Bachelor in biology
-* Insterested in mathematical modelling of biological systems
-* Online lectures of Harvard and MIT
-
-## Languages
-
-* My native language is russian
-* Fluent in english(C1) and french(B2)
+export default tseslint.config({
+  plugins: {
+    // Add the react-x and react-dom plugins
+    'react-x': reactX,
+    'react-dom': reactDom,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended typescript rules
+    ...reactX.configs['recommended-typescript'].rules,
+    ...reactDom.configs.recommended.rules,
+  },
+})
+```
