@@ -8,26 +8,20 @@
   .grid {
     display: grid;
     gap: 1px;
-    border: 1px solid #ccc;
+    border: 1px solid #353535;
     height: 450px;
-  }
-  
-  .cell {
-    width: 15px;
-    height: 15px;
-    border: 1px solid #ddd;
   }
   
   .alive {
     background-image: url('/images/frog.svg');
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #F5FBFF;
+    background-color: #CFE9EC;
     background-size: 30px;
   }
   
   .dead {
-    background-color: #F5FBFF;
+    background-color: #CFE9EC;
   }
   
   .controls {
@@ -47,11 +41,11 @@
     }
   }
   
-  .startButton {
+  .stopButton {
     background-color: #ba1f33;
   }
 
-  .pauseButton {
+  .startButton {
     background-color: #3498db;
   }
   

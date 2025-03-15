@@ -99,8 +99,8 @@ const GameOfLife: React.FC = () => {
         )}
       </div>
       <div className={styles.controls}>
-        <button className={running ? styles.pauseButton: styles.startButton} onClick={() => setRunning(!running)}>
-          {running ? "Pause" : "Start"}
+        <button className={running ? styles.stopButton: styles.startButton} onClick={() => setRunning(!running)}>
+          {running ? "Stop" : "Start"}
         </button>
         <button className={styles.randomButton} onClick={() => setGrid(generateRandomGrid())}>
           Random
