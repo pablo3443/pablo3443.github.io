@@ -58,7 +58,7 @@ const GameOfLife: React.FC = () => {
 
     intervalRef.current = setInterval(() => {
         setGrid(prevGrid => getNextGeneration(prevGrid));
-    }, speed);
+    }, Math.round(100000 / speed));
 
     return () => clearInterval(intervalRef.current);
 
@@ -112,7 +112,7 @@ const GameOfLife: React.FC = () => {
           Reset
         </button>
         <label htmlFor="speed">Speed</label>
-        <input className={styles.speedInput} id="speed" name="speed" type="range" min="100" max="3000" value={speed} onChange={(e) => setSpeed(Number(e.target.value))} />
+        <input className={styles.speedInput} id="speed" name="speed" type="range" min="100" max="1000" value={speed} onChange={(e) => setSpeed(Number(e.target.value))} />
       </div>
     </div>
   );
