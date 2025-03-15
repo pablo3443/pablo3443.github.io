@@ -91,10 +91,10 @@ function App() {
         <h2>Game of life</h2>
         <GameOfLife />
       </section>
-      <section className={styles.section}>
+      {window.innerWidth > 1000 && <section className={styles.section}>
         <h2>Paint app</h2>
         <PaintApp />
-      </section>
+      </section>}
     </div>
   )
 }
