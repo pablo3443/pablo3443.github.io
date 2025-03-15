@@ -11,46 +11,47 @@ function App() {
         <div className={styles.text}>
           <h1>Pavel Norin</h1>
           <p className={styles.title}>Javascript Developer</p>
-          <p className={styles.contact}>pavelnaureen@hotmail.com</p>
-          <a href="https://t.me/pablo3443" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>Telegram</a> | 
-          <a href="https://www.linkedin.com/in/pablo3443" target="_blank" rel="noopener noreferrer" className={styles.contactLink}> LinkedIn</a>
         </div>
       </header>
 
-      <section className={styles.experience}>
+      <div className={styles.contactBlock}>
+        <a href="https://t.me/pablo3443" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>Telegram</a>
+        <a href="https://www.linkedin.com/in/pablo3443" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>LinkedIn</a>
+        <a href="mailto:pavelnaureen@hotmail.com" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>Email</a>
+      </div>
+
+      <section className={styles.section}>
         <h2>Work Experience</h2>
         <ul>
           <li>
-            <h3>Fullstack developer at Visme (2021 – 2025)</h3>
+            <h3>Fullstack developer at <a href="https://visme.co" target="_blank" rel="noopener noreferrer">Visme</a> (2021 – 2025)</h3>
             <p>Built new interfaces for presentations app</p>
             <p>Added integrations with other platforms</p>
             <p>Added learning modules packaging (SCORM, xAPI)</p>
             <p>Added AI solutions</p>
+            <p>Improved accessibility</p>
           </li>
           <li>
-            <h3>Javascript developer at CMW Labs (2019 – 2021)</h3>
+            <h3>Javascript developer at <a href="https://www.cmwlab.com/" target="_blank" rel="noopener noreferrer">CMW Lab</a> (2019 – 2021)</h3>
             <p>Built user interfaces for low-code bpmn-platform</p>
             <p>Added dynamic SVG-elements for bpmn diagrams</p>
             <p>Implemented new charts and diagrams</p>
           </li>
           <li>
             <h3>Freelance Web Developer (2016 – 2019)</h3>
-            <p>Created small websites.</p>
+            <p>Created small websites</p>
           </li>
         </ul>
       </section>
 
-      <section className={styles.education}>
+      <section className={styles.section}>
         <h2>Education</h2>
         <ul>
-          <li>
-            <h3>Bachelor in Biology</h3>
-            <p>Moscow State University, Graduated in 2015</p>
-          </li>
+          <li>Bachelor in Biology, <a href="https://msu.ru/" target="_blank" rel="noopener noreferrer" className={styles.contactLink}>Moscow State University</a>, Graduated in 2015</li>
         </ul>
       </section>
 
-      <section className={styles.languages}>
+      <section className={styles.section}>
         <h2>Languages</h2>
         <ul>
           <li>English</li>
@@ -60,7 +61,7 @@ function App() {
         </ul>
       </section>
 
-      <section className={styles.technologies}>
+      <section className={styles.section}>
         <h2>Technologies</h2>
         <ul>
           <li>JavaScript (ES6+)</li>
@@ -80,7 +81,7 @@ function App() {
         </ul>
       </section>
 
-      <section className={styles.portfolio}>
+      <section className={styles.section}>
         {/* <LoginForm /> */}
       </section>
     </div>

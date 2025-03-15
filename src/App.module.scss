@@ -1,84 +1,75 @@
+$textColor: #353535;
+
 .resume {
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f4f4f4;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: $textColor;
+  background-color: #ffffff;
 }
 
 .header {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  flex-flow: row wrap;
 }
 
 .photo {
   margin-right: 20px;
-}
-
-.photo img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover; 
+    border: 1px solid $textColor;
+  }
 }
 
 .text {
   text-align: left;
+
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .title {
+    font-size: 1.25rem;
+    font-style: italic;
+    margin-top: 5px;
+  }
 }
 
-h1 {
-  font-size: 2rem;
-  margin: 0;
+.contactBlock {
+  .contactLink {
+    display: block;
+    font-size: 1rem;
+    color: #3498db;
+    text-decoration: none;
+    margin: 5px;
+    font-weight: inherit;
+  }
 }
 
-.title {
-  font-size: 1.25rem;
-  font-style: italic;
-  margin-top: 5px;
-}
-
-.contact {
-  font-size: 1rem;
-  color: #555;
-  margin-top: 5px;
-}
-
-.contactLink {
-  font-size: 1rem;
-  color: #3498db;
-  text-decoration: none;
-  margin-left: 5px;
-}
-
-.portfolio {
-  font-size: 1rem;
-  color: #3498db;
-  text-decoration: none;
-  margin-top: 10px;
-}
-
-.portfolio:hover {
-  text-decoration: underline;
-}
-
-.experience {
-  margin-top: 30px;
-}
-
-.experience h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.experience ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.experience li {
-  font-size: 1rem;
-  margin: 5px 0;
+.section {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  margin: 10px 0;
+  h2 {
+    margin: 0;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #3c6e71;
+    color: #ffffff;
+    font-size: 1.2rem;
+  }
+  a {
+    color: #3498db;
+  }
 }
