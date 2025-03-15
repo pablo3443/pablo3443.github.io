@@ -1,10 +1,16 @@
 import { useState, ChangeEvent, FormEvent } from 'react';
 import styles from './loginForm.module.scss';
+import Loader from '../loader';
 
 const LoginForm: React.FC = () => {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [error, setError] = useState<string>('');
+  const [loading, setLoading] = useState<boolean>(false);
+
+  if (loading) {
+    return <div className={styles.loginContainer}><Loader /></div>
+  }
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
@@ -12,7 +18,12 @@ const LoginForm: React.FC = () => {
       setError('Both fields are required');
       return;
     }
-    // Simulate form submission
+
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 5000)
+
     console.log('Form submitted:', { email, password });
   };
 

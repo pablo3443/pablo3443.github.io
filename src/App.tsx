@@ -1,5 +1,7 @@
 import styles from './App.module.scss';
-// import LoginForm from './loginForm';
+import LoginForm from './loginForm';
+import GameOfLife from './gameOfLife';
+import PaintApp from './paintApp';
 
 function App() {
   return (
@@ -82,7 +84,16 @@ function App() {
       </section>
 
       <section className={styles.section}>
-        {/* <LoginForm /> */}
+        <h2>Login form</h2>
+        <LoginForm />
+      </section>
+      <section className={styles.section}>
+        <h2>Game of life</h2>
+        <GameOfLife />
+      </section>
+      <section className={styles.section}>
+        <h2>Paint app</h2>
+        <PaintApp />
       </section>
     </div>
   )

@@ -1,0 +1,69 @@
+.gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 1px;
+    border: 1px solid #ccc;
+    height: 450px;
+  }
+  
+  .cell {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ddd;
+  }
+  
+  .alive {
+    background-image: url('images/frog.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #F5FBFF;
+    background-size: 30px;
+  }
+  
+  .dead {
+    background-color: #F5FBFF;
+  }
+  
+  .controls {
+    margin: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  
+    button {
+      padding: 8px 18px;
+      border: none;
+      cursor: pointer;
+      color: #fff;
+      border-radius: 5px;
+    }
+  }
+  
+  .startButton {
+    background-color: #ba1f33;
+  }
+
+  .pauseButton {
+    background-color: #3498db;
+  }
+  
+  .randomButton {
+    background-color: #3c6e71;
+  }
+  
+  .resetButton {
+    background-color: #777777;
+    margin-right: auto;
+  }
+
+  .speedInput {
+    cursor: pointer;
+  }
