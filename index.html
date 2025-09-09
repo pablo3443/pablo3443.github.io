@@ -1,16 +1,280 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pablo3443</title>
-  </head>
-  <body>
-    <div id="root" class="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pavel Norin — Senior Software Developer</title>
+  <style>
+    :root {
+      --primary: #0d6efd;
+      --secondary: #6c757d;
+      --bg: #f4f5f7;
+      --card-bg: #ffffff;
+      --text: #212529;
+      --border: #dee2e6;
+      --radius: 14px;
+    }
+
+    body {
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: var(--radius);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      margin: 0;
+      color: var(--primary);
+    }
+
+    .subtitle {
+      color: var(--secondary);
+      font-size: 1.1em;
+      margin: 6px 0;
+    }
+
+    .contact {
+      font-size: 0.95em;
+      margin-top: 10px;
+    }
+
+    .contact a {
+      color: var(--primary);
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    h2 {
+      font-size: 1.4em;
+      margin-top: 25px;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 6px;
+    }
+
+    section p {
+      margin: 10px 0;
+    }
+
+    .skills-cluster {
+      margin: 16px 0;
+    }
+
+    .skills-title {
+      font-weight: bold;
+      color: var(--primary);
+      margin-bottom: 6px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 0;
+      list-style: none;
+      margin: 0;
+    }
+
+    .skills li {
+      background: #e9ecef;
+      padding: 6px 12px;
+      border-radius: 12px;
+      font-size: 0.9em;
+    }
+
+    .job {
+      margin-bottom: 20px;
+    }
+
+    .job h3 {
+      margin: 0;
+      font-size: 1.15em;
+    }
+
+    .period {
+      font-size: 0.9em;
+      color: var(--secondary);
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.85em;
+      color: var(--secondary);
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        margin: 10px;
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 1.8em;
+      }
+
+      h2 {
+        font-size: 1.2em;
+      }
+
+      .skills li {
+        font-size: 0.85em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Pavel Norin</h1>
+      <p class="subtitle">Senior Software Developer</p>
+      <p  class="contact">Email: pavelnaureen@hotmail.com
+        <a href="https://linkedin.com/in/pablo3443" target="_blank">LinkedIn</a> |
+        <a href="https://t.me/pablo3443" target="_blank">Telegram</a>
+      </p>
+    </header>
+
+    <section>
+      <h2>Profile</h2>
+      <p>Senior Software Developer with expertise in fullstack web development and scalable microservices. Experienced in React, Node.js, PHP, Go, and cloud services including AWS and Google Cloud. Skilled in containerization, CI/CD, and real-time communication technologies.</p>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+
+      <div class="skills-cluster">
+        <div class="skills-title">Frontend</div>
+        <ul class="skills">
+          <li>React</li>
+          <li>Vue.js</li>
+          <li>JavaScript (ES6+)</li>
+          <li>TypeScript</li>
+          <li>HTML5, CSS3</li>
+          <li>D3.js</li>
+          <li>Three.js</li>
+          <li>Accessibility (a11y)</li>
+          <li>Backbone.js</li>
+          <li>Marionette.js</li>
+          <li>SVG & Canvas</li>
+          <li>AmCharts, Apexcharts</li>
+          <li>SCORM</li>
+        </ul>
+      </div>
+
+      <div class="skills-cluster">
+        <div class="skills-title">Backend</div>
+        <ul class="skills">
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>Fastify</li>
+          <li>Go (Gin)</li>
+          <li>GORM</li>
+          <li>PHP (Phalcon)</li>
+          <li>MySQL, PostgreSQL, MongoDB</li>
+          <li>Redis</li>
+          <li>REST & GraphQL APIs</li>
+        </ul>
+      </div>
+
+      <div class="skills-cluster">
+        <div class="skills-title">Cloud & DevOps</div>
+        <ul class="skills">
+          <li>Docker</li>
+          <li>CI/CD Pipelines</li>
+          <li>AWS (S3, Lambda, SQS, EC2)</li>
+          <li>Google Cloud</li>
+          <li>Digital ocean (App platform, Droplets) </li>
+          <li>NGINX</li>
+        </ul>
+      </div>
+
+      <div class="skills-cluster">
+        <div class="skills-title">Services</div>
+        <ul class="skills">
+          <li>WebRTC</li>
+          <li>TURN/STUN Servers</li>
+          <li>WebSockets</li>
+        </ul>
+      </div>
+
+      <div class="skills-cluster">
+        <div class="skills-title">Tools & Ecosystem</div>
+        <ul class="skills">
+          <li>npm, yarn, pnpm</li>
+          <li>Git</li>
+          <li>Jest</li>
+          <li>Webpack</li>
+          <li>Vite</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+
+      <div class="job">
+        <h3><a href="https://www.visme.co" target="_blank">Visme</a> — Fullstack Developer</h3>
+        <span class="period">2021 – 2025</span>
+        <ul>
+          <li>Developed and maintained a large-scale application using React, Node.js, MySQL, and PHP (Phalcon).</li>
+          <li>Designed microservices for analytics, user management, and content delivery.</li>
+          <li>Worked with AWS (S3, Lambda, SQS) and Google Cloud for scalable integrations.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3><a href="https://www.comindware.com" target="_blank">Comindware</a> — Frontend Engineer</h3>
+        <span class="period">2019 – 2021</span>
+        <ul>
+          <li>Built a low-code platform frontend using Backbone.js and Marionette.js.</li>
+          <li>Created interactive SVG diagrams and workflow visualizations.</li>
+          <li>Integrated with C# backend services.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <p><strong><a href="https://quickle.co" target="_blank">Quickle</a></strong> — Real-time P2P videocalls platform with chat, file sharing and ultra-low latency, built using Go (Gin), WebRTC, custom TURN/STUN servers, Docker, and cloud services.</p>
+    </section>
+
+    <section>
+      <h2>Languages</h2>
+      <ul class="skills">
+        <li>English — Fluent</li>
+        <li>Russian — Native</li>
+        <li>Spanish — Intermediate</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>© 2025 Pavel Norin</p>
+    </footer>
+  </div>
+</body>
 </html>
